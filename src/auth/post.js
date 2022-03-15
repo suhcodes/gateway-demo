@@ -1,5 +1,3 @@
-import Cookies from 'js-cookie'
-
 /**
  * @memberof auth
  * @module createToken

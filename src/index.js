@@ -1,4 +1,5 @@
 import auth from './auth'
+import cards from './cards'
 import request from './support'
 
 let GatewayInstance = null

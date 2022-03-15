@@ -26,7 +26,7 @@ describe('Get Cards', () => {
 
   describe('getCards', () => {
     it('SHOULD call get once', () => {
-      instance.cards.getCards(body)
+      instance.cards.getCards()
       expect(postStub).to.be.calledWith()
     })
   })
