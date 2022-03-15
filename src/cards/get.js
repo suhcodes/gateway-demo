@@ -11,12 +11,12 @@ export function getCards () {
       title: 'My title',
       text: 'My paragraph for this card.'
     }
-  },{
+  }, {
     content: {
       title: 'My second title',
       text: 'My paragraph for the second card.'
     }
-  },{
+  }, {
     content: {
       title: 'My second title',
       text: 'My paragraph for the second card.'
