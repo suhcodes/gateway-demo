@@ -114,9 +114,7 @@ Import it as a dependency in the `package.json` file, to reference it as its a p
 
 ```json
 {
-  ...
-  "movies-finder-gateway": "file:../gateway-demo",
-  ...
+  "gateway": "file:../gateway-demo",
 }
 ```
 
@@ -124,8 +122,6 @@ Import it as a dependency in the `package.json` file, to reference it as its a p
 
 ```json
 {
-  ...
-  "movies-finder-gateway": "git@github.com:suhcodes/gateway-demo.git#v1.0.0",
-  ...
+  "gateway": "git@github.com:suhcodes/gateway-demo.git#v1.0.0",
 }
 ```
