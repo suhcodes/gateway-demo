@@ -18,9 +18,9 @@ export default class GatewayService {
     return GatewayInstance
   }
 
-  static getInstance (options) {
+  static getInstance () {
     if (!GatewayInstance) {
-      GatewayInstance = new GatewayService(options)
+      GatewayInstance = new GatewayService()
     }
     return GatewayInstance
   }
