@@ -6,7 +6,7 @@ module.exports = merge(base, {
   mode: 'development',
   devtool: 'inline-source-map',
   output: {
-    filename: 'fireworks_api.js'
+    filename: 'gateway.js'
   },
   plugins: [
     new webpack.EnvironmentPlugin({

@@ -1,8 +1,8 @@
 import auth from './auth'
 import request from './support'
 
-let FireworksInstance = null
-export default class FireworksService {
+let GatewayInstance = null
+export default class GatewayService {
   constructor (options) {
     this.options = options
     this.request = request
@@ -10,17 +10,17 @@ export default class FireworksService {
     this.url = options.url
     this.auth = auth.bind(this)()
 
-    if (!FireworksInstance) {
-      FireworksInstance = this
+    if (!GatewayInstance) {
+      GatewayInstance = this
     }
-    return FireworksInstance
+    return GatewayInstance
   }
 
   static getInstance (options) {
-    if (!FireworksInstance) {
-      FireworksInstance = new FireworksService(options)
+    if (!GatewayInstance) {
+      GatewayInstance = new GatewayService(options)
     }
-    return FireworksInstance
+    return GatewayInstance
   }
 
   paramSerializer (params = {}) {

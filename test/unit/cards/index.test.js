@@ -4,7 +4,7 @@ import GatewayService from '../../../src'
 
 chai.use(sinonChai)
 
-describe('Auth', () => {
+describe('Cards', () => {
   let instance
   const options = {
     env: 'production',
@@ -20,8 +20,8 @@ describe('Auth', () => {
   })
 
   describe('Smoke Test', () => {
-    it('SHOULD contain auth.createToken Function', () => {
-      expect(instance.auth.createToken).to.be.instanceof(Function)
+    it('SHOULD contain cards.getCards Function', () => {
+      expect(instance.cards.getCards).to.be.instanceof(Function)
     })
   })
 })

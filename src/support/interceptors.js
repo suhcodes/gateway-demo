@@ -8,7 +8,7 @@ export function verifyAuth (config, token) {
 }
 
 export function requestInterceptor (config) {
-  const token = Cookies.get(`fw-tk_${this.env}`)
+  const token = Cookies.get(`demo-tk_${this.env}`)
   const request = verifyAuth(config, token)
   return request
 }

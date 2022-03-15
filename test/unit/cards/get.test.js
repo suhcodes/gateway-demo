@@ -7,7 +7,7 @@ var chaiAsPromised = require('chai-as-promised')
 chai.use(sinonChai)
 chai.use(chaiAsPromised)
 
-describe('Create Token', () => {
+describe('Get Cards', () => {
   let instance, postStub
   const options = {
     env: 'production',
@@ -24,14 +24,10 @@ describe('Create Token', () => {
     postStub.restore()
   })
 
-  describe('createToken', () => {
-    const body = {
-      email: 'test+mail@fire-engine-red.com',
-      password: 'F.Lgc2m;*>JBPc.x'
-    }
-    it('SHOULD call request.post once', () => {
-      instance.auth.createToken(body)
-      expect(postStub).to.be.calledWith(`${instance.url}/login`, body)
+  describe('getCards', () => {
+    it('SHOULD call get once', () => {
+      instance.cards.getCards(body)
+      expect(postStub).to.be.calledWith()
     })
   })
 })

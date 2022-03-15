@@ -9,7 +9,7 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, '../lib'),
-    library: 'FireworksAPI',
+    library: 'Gateway',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

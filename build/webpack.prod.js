@@ -7,7 +7,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 module.exports = merge(base, {
   mode: 'production',
   output: {
-    filename: 'fireworks_api.min.js'
+    filename: 'gateway.min.js'
   },
   optimization: {
     minimize: true,

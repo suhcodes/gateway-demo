@@ -28,15 +28,15 @@ New modules are added directly to the './src' folder, the scope of modules are d
 * `index.js` gathers all methods
 
 ```
-movies_finder_gateway
+gateway
 └─── build
 │   │   webpack.base.js
 │   │   webpack.dev.js
 │   │   webpack.prod.js
 │
 └─── lib
-│   │   movies_finder_gateway.js
-│   │   movies_finder_gateway.min.js
+│   │   gateway.js
+│   │   gateway.min.js
 │   │   index.html
 │   │   index.js
 │   
@@ -92,7 +92,7 @@ export function moduleName (args) {
 
 The generated packages are added to the `./lib` folder.
 
-* `index.js` should always export the minified version of the library (`movies_finder_gateway.min.js`)
+* `index.js` should always export the minified version of the library (`gateway.min.js`)
 
   > If `index.js` is deleted, it is required to manually create it again.
 
