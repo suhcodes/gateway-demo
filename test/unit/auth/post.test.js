@@ -26,7 +26,7 @@ describe('Create Token', () => {
 
   describe('createToken', () => {
     const body = {
-      email: 'test+mail@fire-engine-red.com',
+      email: 'test+mail@my-vue-demo.com',
       password: 'F.Lgc2m;*>JBPc.x'
     }
     it('SHOULD call request.post once', () => {

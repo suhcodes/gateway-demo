@@ -1,67 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.0230" tests="10" failures="5">
-  <testsuite name="Root Suite" timestamp="2022-03-15T14:54:42" tests="0" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="0.0130" tests="8" failures="7">
+  <testsuite name="Root Suite" timestamp="2022-03-15T14:57:23" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Auth" timestamp="2022-03-15T14:54:42" tests="0" file="C:\projects\personal\gateway-demo\test\unit\auth\index.test.js" time="0.0000" failures="0">
+  <testsuite name="Auth" timestamp="2022-03-15T14:57:23" tests="0" file="C:\projects\personal\gateway-demo\test\unit\auth\index.test.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Smoke Test" timestamp="2022-03-15T14:54:42" tests="1" file="C:\projects\personal\gateway-demo\test\unit\auth\index.test.js" time="0.0030" failures="0">
-    <testcase name="Auth Smoke Test SHOULD contain auth.createToken Function" time="0.0010" classname="SHOULD contain auth.createToken Function">
-    </testcase>
-  </testsuite>
-  <testsuite name="Create Token" timestamp="2022-03-15T14:54:42" tests="0" file="C:\projects\personal\gateway-demo\test\unit\auth\post.test.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="createToken" timestamp="2022-03-15T14:54:42" tests="1" file="C:\projects\personal\gateway-demo\test\unit\auth\post.test.js" time="0.0060" failures="1">
-    <testcase name="Create Token createToken SHOULD call request.post once" time="0.0010" classname="SHOULD call request.post once">
-      <failure message="Cannot read properties of undefined (reading &apos;then&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'then')
-    at GatewayService.createToken (src\auth\post.js:7:134)
-    at Context.<anonymous> (test\unit\auth\post.test.js:2:5205)
+  <testsuite name="Smoke Test" timestamp="2022-03-15T14:57:23" tests="1" file="C:\projects\personal\gateway-demo\test\unit\auth\index.test.js" time="0.0040" failures="1">
+    <testcase name="Auth &quot;before each&quot; hook for &quot;SHOULD contain auth.createToken Function&quot;" time="0.0010" classname="&quot;before each&quot; hook for &quot;SHOULD contain auth.createToken Function&quot;">
+      <failure message="cards is not defined" type="ReferenceError"><![CDATA[ReferenceError: cards is not defined
+    at new GatewayService (src\index.js:2:2664)
+    at Context.<anonymous> (test\unit\auth\index.test.js:2:4285)
     at processImmediate (node:internal/timers:464:21)]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Get Cards" timestamp="2022-03-15T14:54:42" tests="0" file="C:\projects\personal\gateway-demo\test\unit\cards\get.test.js" time="0.0000" failures="0">
+  <testsuite name="Create Token" timestamp="2022-03-15T14:57:23" tests="0" file="C:\projects\personal\gateway-demo\test\unit\auth\post.test.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="getCards" timestamp="2022-03-15T14:54:42" tests="1" file="C:\projects\personal\gateway-demo\test\unit\cards\get.test.js" time="0.0020" failures="1">
-    <testcase name="Get Cards getCards SHOULD call get once" time="0.0000" classname="SHOULD call get once">
-      <failure message="Cannot read properties of undefined (reading &apos;getCards&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'getCards')
-    at Context.<anonymous> (test\unit\cards\get.test.js:2:4871)
+  <testsuite name="createToken" timestamp="2022-03-15T14:57:23" tests="1" file="C:\projects\personal\gateway-demo\test\unit\auth\post.test.js" time="0.0020" failures="2">
+    <testcase name="Create Token &quot;before each&quot; hook for &quot;SHOULD call request.post once&quot;" time="0.0000" classname="&quot;before each&quot; hook for &quot;SHOULD call request.post once&quot;">
+      <failure message="cards is not defined" type="ReferenceError"><![CDATA[ReferenceError: cards is not defined
+    at new GatewayService (src\index.js:2:2664)
+    at Context.<anonymous> (test\unit\auth\post.test.js:2:4612)
+    at processImmediate (node:internal/timers:464:21)]]></failure>
+    </testcase>
+    <testcase name="Create Token &quot;after each&quot; hook for &quot;SHOULD call request.post once&quot;" time="0.0000" classname="&quot;after each&quot; hook for &quot;SHOULD call request.post once&quot;">
+      <failure message="Cannot read properties of undefined (reading &apos;restore&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'restore')
+    at Context.<anonymous> (test\unit\auth\post.test.js:2:4869)
     at processImmediate (node:internal/timers:464:21)]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Cards" timestamp="2022-03-15T14:54:42" tests="0" file="C:\projects\personal\gateway-demo\test\unit\cards\index.test.js" time="0.0000" failures="0">
+  <testsuite name="Get Cards" timestamp="2022-03-15T14:57:23" tests="0" file="C:\projects\personal\gateway-demo\test\unit\cards\get.test.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Smoke Test" timestamp="2022-03-15T14:54:42" tests="1" file="C:\projects\personal\gateway-demo\test\unit\cards\index.test.js" time="0.0010" failures="1">
-    <testcase name="Cards Smoke Test SHOULD contain cards.getCards Function" time="0.0000" classname="SHOULD contain cards.getCards Function">
-      <failure message="Cannot read properties of undefined (reading &apos;getCards&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'getCards')
-    at Context.<anonymous> (test\unit\cards\index.test.js:2:4770)
+  <testsuite name="getCards" timestamp="2022-03-15T14:57:23" tests="1" file="C:\projects\personal\gateway-demo\test\unit\cards\get.test.js" time="0.0010" failures="2">
+    <testcase name="Get Cards &quot;before each&quot; hook for &quot;SHOULD call get once&quot;" time="0.0000" classname="&quot;before each&quot; hook for &quot;SHOULD call get once&quot;">
+      <failure message="cards is not defined" type="ReferenceError"><![CDATA[ReferenceError: cards is not defined
+    at new GatewayService (src\index.js:2:2664)
+    at Context.<anonymous> (test\unit\cards\get.test.js:2:4413)
+    at processImmediate (node:internal/timers:464:21)]]></failure>
+    </testcase>
+    <testcase name="Get Cards &quot;after each&quot; hook for &quot;SHOULD call get once&quot;" time="0.0000" classname="&quot;after each&quot; hook for &quot;SHOULD call get once&quot;">
+      <failure message="Cannot read properties of undefined (reading &apos;restore&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'restore')
+    at Context.<anonymous> (test\unit\cards\get.test.js:2:4660)
     at processImmediate (node:internal/timers:464:21)]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="FireworksService" timestamp="2022-03-15T14:54:42" tests="0" file="C:\projects\personal\gateway-demo\test\unit\index.test.js" time="0.0000" failures="0">
+  <testsuite name="Cards" timestamp="2022-03-15T14:57:23" tests="0" file="C:\projects\personal\gateway-demo\test\unit\cards\index.test.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Smoke Tests" timestamp="2022-03-15T14:54:42" tests="3" file="C:\projects\personal\gateway-demo\test\unit\index.test.js" time="0.0010" failures="0">
-    <testcase name="FireworksService Smoke Tests SHOULD be a class" time="0.0000" classname="SHOULD be a class">
-    </testcase>
-    <testcase name="FireworksService Smoke Tests SHOULD contain auth Object" time="0.0000" classname="SHOULD contain auth Object">
-    </testcase>
-    <testcase name="FireworksService Smoke Tests SHOULD have static method getInstance" time="0.0000" classname="SHOULD have static method getInstance">
-    </testcase>
-  </testsuite>
-  <testsuite name="FireworksService Singleton" timestamp="2022-03-15T14:54:42" tests="1" file="C:\projects\personal\gateway-demo\test\unit\index.test.js" time="0.0040" failures="1">
-    <testcase name="FireworksService FireworksService Singleton GIVEN new instance of FireworksService env should be equal to DEVELOPMENT" time="0.0020" classname="GIVEN new instance of FireworksService env should be equal to DEVELOPMENT">
-      <failure message="expected &apos;my-vue-demo.com&apos; to equal &apos;dev.local.fireworkscrm.net&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'my-vue-demo.com' to equal 'dev.local.fireworkscrm.net'
-    at Context.<anonymous> (test\unit\index.test.js:2:5677)
+  <testsuite name="Smoke Test" timestamp="2022-03-15T14:57:23" tests="1" file="C:\projects\personal\gateway-demo\test\unit\cards\index.test.js" time="0.0010" failures="1">
+    <testcase name="Cards &quot;before each&quot; hook for &quot;SHOULD contain cards.getCards Function&quot;" time="0.0000" classname="&quot;before each&quot; hook for &quot;SHOULD contain cards.getCards Function&quot;">
+      <failure message="cards is not defined" type="ReferenceError"><![CDATA[ReferenceError: cards is not defined
+    at new GatewayService (src\index.js:2:2664)
+    at Context.<anonymous> (test\unit\cards\index.test.js:2:4381)
     at processImmediate (node:internal/timers:464:21)]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="getInstance()" timestamp="2022-03-15T14:54:42" tests="1" file="C:\projects\personal\gateway-demo\test\unit\index.test.js" time="0.0010" failures="1">
-    <testcase name="FireworksService getInstance() SHOULD return env as PRODUCTION" time="0.0010" classname="SHOULD return env as PRODUCTION">
-      <failure message="expected &apos;my-vue-demo.com&apos; to equal &apos;dev.local.fireworkscrm.net&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'my-vue-demo.com' to equal 'dev.local.fireworkscrm.net'
-    at Context.<anonymous> (test\unit\index.test.js:2:6071)
-    at processImmediate (node:internal/timers:464:21)]]></failure>
-    </testcase>
+  <testsuite name="GatewayService" timestamp="2022-03-15T14:57:23" tests="0" file="C:\projects\personal\gateway-demo\test\unit\index.test.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="paramSerializer" timestamp="2022-03-15T14:54:42" tests="1" file="C:\projects\personal\gateway-demo\test\unit\index.test.js" time="0.0010" failures="0">
-    <testcase name="FireworksService paramSerializer SHOULD return QUERY PARAMS" time="0.0010" classname="SHOULD return QUERY PARAMS">
+  <testsuite name="Smoke Tests" timestamp="2022-03-15T14:57:23" tests="4" file="C:\projects\personal\gateway-demo\test\unit\index.test.js" time="0.0030" failures="1">
+    <testcase name="GatewayService &quot;before each&quot; hook for &quot;SHOULD be a class&quot;" time="0.0000" classname="&quot;before each&quot; hook for &quot;SHOULD be a class&quot;">
+      <failure message="cards is not defined" type="ReferenceError"><![CDATA[ReferenceError: cards is not defined
+    at new GatewayService (src\index.js:2:2664)
+    at Context.<anonymous> (test\unit\index.test.js:2:4387)
+    at processImmediate (node:internal/timers:464:21)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

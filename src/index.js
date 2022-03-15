@@ -9,6 +9,7 @@ export default class GatewayService {
     this.env = options.env
     this.url = options.url
     this.auth = auth.bind(this)()
+    this.cards = cards.bind(this)()
 
     if (!GatewayInstance) {
       GatewayInstance = this
