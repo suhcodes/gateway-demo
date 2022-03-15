@@ -1,0 +1,15 @@
+{
+  "extends": "standard",
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js", "*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}
