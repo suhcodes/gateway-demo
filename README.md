@@ -4,9 +4,10 @@
     </h1>
 </div>
 
+### API Gateway Demo
 The API Gateway meant to be consumed by Vue 3 Webapp Demo.
 
-<br><br>
+<br>
 
 ## Getting Started
 
